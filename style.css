@@ -4,14 +4,14 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
     2. Remove default margin
   */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /*
@@ -20,8 +20,8 @@
     4. Improve text rendering
   */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -32,8 +32,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /*
@@ -43,7 +43,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /*
@@ -56,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*
@@ -64,21 +64,37 @@ h6 {
   */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 /* End of CSS Reset */
 
 
 :root {
-    --clr-1-: #003847;
-    --clr-2-: #25a18e;
-    --clr-3-: #00a5cf;
-    --clr-4-: #7ae582;
-    --clr-5-: #9fffcb;
+  --blue-1: #0a032d;
+  --blue-2: #102052;
+  --blue-3: #22407e;
+  --blue-4: #3a619d;
+  --blue-5: #8bb6e3;
 }
 
 body {
-    background-color: var(--clr-1-);
-    color: var(--clr-5-);
+  display: flex;
+  color: var(--blue-2);
+  height: 100vh;
+}
+
+.page-left {
+  width: 40%;
+  background: url(https://images.unsplash.com/photo-1653299832314-5d3dc1e5a83c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1227&q=80) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  background-origin: border-box;
+  position: relative;
+  background-clip: content-box;
+}
+
+
+.page-right {
+  width: 60%;
 }
