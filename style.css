@@ -79,9 +79,11 @@ h6 {
 }
 
 body {
-  display: flex;
-  color: var(--blue-2);
   height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 .page-left {
@@ -90,8 +92,8 @@ body {
   background-size: cover;
   height: 100%;
   background-origin: border-box;
-  position: relative;
   background-clip: content-box;
+  max-width: 690px;
 }
 
 
@@ -100,5 +102,22 @@ body {
 }
 
 .image-banner {
-  background-color: #0a032d;
+  position: relative;
+  top: 20vh;
+  background-color: rgb(16, 32, 82, 0.475);
+  /* converted --blue-2 to rgba for opacity */
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-banner-text {
+  color: white;
+  font-size: 12rem;
+}
+
+ion-icon {
+  color: white;
+  font-size: 12rem;
 }
