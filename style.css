@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -69,7 +71,6 @@ h6 {
 
 /* End of CSS Reset */
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
 :root {
   --blue-1: #000022;
@@ -155,6 +156,7 @@ html {
 
 .line-one {
   margin-bottom: 3rem;
+  line-height: 150%;
 }
 
 .line-two {
@@ -201,6 +203,7 @@ input {
 label {
   font-size: 1.5rem;
   display: block;
+  letter-spacing: 1px;
 }
 
 .form-row {
@@ -249,10 +252,26 @@ input[type=submit]:active {
   border: 2px solid #cc0000;
 }
 
-
+.valid {
+  border: 2px solid #50C878;
+}
 
 a {
   text-decoration: none;
   color: var(--blue-3);
   font-weight: bold;
+}
+
+input:not(input[type=submit]) {
+  padding: 0 0 0 0.5rem;
+}
+
+.error-message {
+  font-size: 1.4rem;
+  color: #cc0000;
+  opacity: 0%;
+}
+
+.show-error {
+  opacity: 100%;
 }
