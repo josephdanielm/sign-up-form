@@ -213,12 +213,31 @@ label {
   padding: 6rem 0 0 3rem;
 }
 
+input:focus:not(input[type=submit]) {
+  outline: none;
+  border: 2px solid var(--blue-4);
+  box-shadow: 2px 2px 2px var(--blue-3);
+}
+
 input[type=submit] {
   width: 30rem;
   padding: 1rem 2rem;
   background-color: var(--blue-4);
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.15s;
+}
+
+
+input[type=submit]:hover {
+  background-color: var(--blue-3);
+  cursor: pointer;
+}
+
+input[type=submit]:active {
+  background-color: var(--blue-2);
+  transform: scale(0.95);
 }
 
 .account-exists {
@@ -230,8 +249,10 @@ input[type=submit] {
   border: 2px solid #cc0000;
 }
 
-input:focus {
-  outline: none;
-  border: 2px solid var(--blue-4);
-  box-shadow: 2px 2px 2px var(--blue-3);
+
+
+a {
+  text-decoration: none;
+  color: var(--blue-3);
+  font-weight: bold;
 }
