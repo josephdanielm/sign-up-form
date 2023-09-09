@@ -23,10 +23,28 @@
                 life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
             <p class="hook line-two">You <em>know</em> you want to.</p>
         </div>
-        <form action="" method="get" class="section-form">
+        <form id="service-form" action="" method="get" class="section-form">
             <legend>Let's do this!</legend>
+
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" name="firstname" required>
+            <label for="lastname">LAST NAME</label>
+            <input type="text" name="lastname" required>
+            <br>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" required>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" required>
+            <br>
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+            <label for="password-confirm">CONFIRM PASSWORD</label>
+            <input type="password" name="password-confirm" id="password-confirm">
         </form>
-        <div class="section-account"></div>
+        <div class="section-account">
+            <input type="submit" form="service-form" value="Create Account" />
+            <p class="account-exists">Already have an account? <a href="" class="log-in">Log in</a></p>
+        </div>
     </div>
 
 
