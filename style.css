@@ -78,7 +78,8 @@ h6 {
   --blue-4: #4466aa;
   --blue-5: #6699cc;
 
-  --blue-gray: #f9f9fb;
+  --blue-gray-1: #f9f9fb;
+  --blue-gray-2: #ededef;
 }
 
 
@@ -166,15 +167,44 @@ html {
   flex-grow: 2;
 }
 
-.section-form {
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: white;
   justify-self: center;
   flex-grow: 1;
-  padding: 2rem 4rem 2rem 3rem;
+  padding: 2rem 4rem 0 3rem;
   filter: drop-shadow(0 0 16px var(--blue-3));
 }
 
 legend {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 2rem;
+}
+
+input {
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 2px solid var(--blue-gray-2);
+  border-radius: 6px;
+
+}
+
+
+label {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.form-row {
+  flex-grow: 1;
+  display: flex;
+  gap: 10rem;
 }
