@@ -138,8 +138,9 @@ html {
 }
 
 .hook {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 4rem;
 }
 
 .section-hook {
@@ -148,10 +149,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: end;
-}
-
-.hook {
-  margin-left: 4rem;
 }
 
 .line-one {
@@ -182,7 +179,7 @@ form {
 
 legend {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 400;
   width: 100%;
   height: fit-content;
   margin-bottom: 2rem;
@@ -201,9 +198,10 @@ input {
 
 
 label {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
   display: block;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .form-row {
@@ -274,4 +272,52 @@ input:not(input[type=submit]) {
 
 .show-error {
   opacity: 100%;
+}
+
+@media (max-width: 777px) {
+  body {
+    flex-direction: column;
+  }
+
+  .page-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .image-banner {
+    top: 0;
+  }
+
+  .hook {
+    padding-top: 3rem;
+  }
+
+  .line-one,
+  .line-two {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+
+  .section-hook {
+    padding: 4rem;
+  }
+
+  legend {
+    margin-bottom: 0;
+  }
+
+  form {
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section-account {
+    padding-bottom: 4rem;
+  }
 }

@@ -25,5 +25,3 @@ function check() {
 
 password.addEventListener('keyup', check);
 passwordConfirm.addEventListener('keyup', check);
-
-
