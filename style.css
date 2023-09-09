@@ -69,17 +69,19 @@ h6 {
 
 /* End of CSS Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap');
 
 :root {
-  --blue-1: #0a032d;
-  --blue-2: #102052;
-  --blue-3: #22407e;
-  --blue-4: #3a619d;
-  --blue-5: #8bb6e3;
+  --blue-1: #000022;
+  --blue-2: #112255;
+  --blue-3: #224477;
+  --blue-4: #4466aa;
+  --blue-5: #6699cc;
 }
 
 body {
   height: 100vh;
+  font-family: 'Figtree', sans-serif;
 }
 
 html {
@@ -110,14 +112,19 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
 }
 
 .image-banner-text {
   color: white;
-  font-size: 12rem;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
-ion-icon {
-  color: white;
-  font-size: 12rem;
+.logo {
+  width: 14rem;
+  filter: brightness(0) saturate(100%) invert(98%) sepia(99%) saturate(10%) hue-rotate(221deg) brightness(104%) contrast(100%);
+  margin-right: 2rem;
+  margin-top: 2rem;
 }
