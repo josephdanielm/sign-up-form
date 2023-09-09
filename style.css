@@ -69,7 +69,7 @@ h6 {
 
 /* End of CSS Reset */
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
 :root {
   --blue-1: #000022;
@@ -77,11 +77,15 @@ h6 {
   --blue-3: #224477;
   --blue-4: #4466aa;
   --blue-5: #6699cc;
+
+  --blue-gray: #f9f9fb;
 }
+
 
 body {
   height: 100vh;
   font-family: 'Figtree', sans-serif;
+  display: flex;
 }
 
 html {
@@ -89,7 +93,7 @@ html {
 }
 
 .page-left {
-  width: 40%;
+  width: 100%;
   background: url(https://images.unsplash.com/photo-1653299832314-5d3dc1e5a83c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1227&q=80) no-repeat center;
   background-size: cover;
   height: 100%;
@@ -100,7 +104,9 @@ html {
 
 
 .page-right {
-  width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-banner {
@@ -127,4 +133,28 @@ html {
   filter: brightness(0) saturate(100%) invert(98%) sepia(99%) saturate(10%) hue-rotate(221deg) brightness(104%) contrast(100%);
   margin-right: 2rem;
   margin-top: 2rem;
+}
+
+.hook {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-hook {
+  background-color: var(--blue-gray);
+  flex-grow: 2;
+}
+
+
+.section-account {
+  background-color: var(--blue-gray);
+  flex-grow: 2;
+}
+
+.section-form {
+  background-color: white;
+  justify-self: center;
+  flex-grow: 1;
+  border: 1px solid var(--blue-2);
+  padding: 2rem 4rem 2rem 3rem;
 }
