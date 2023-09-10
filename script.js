@@ -4,7 +4,11 @@ const password = document.getElementById('password')
     , errorMsg = document.querySelector('.error-message');
 
 function check() {
-    if (password.value == passwordConfirm.value) {
+    const passwordValue = password.value;
+    const passwordConfirmValue = passwordConfirm.value;
+
+    if (passwordValue === passwordConfirmValue && passwordValue !== '') {
+        // Passwords match and are not empty
         if (password.classList.contains('error')) {
             password.classList.remove('error');
             passwordConfirm.classList.remove('error');
@@ -12,7 +16,19 @@ function check() {
         }
         password.classList.add('valid');
         passwordConfirm.classList.add('valid');
+    } else if (passwordValue === '' && passwordConfirmValue === '') {
+        // Both fields are empty
+        if (password.classList.contains('valid')) {
+            password.classList.remove('valid');
+            passwordConfirm.classList.remove('valid');
+        }
+        if (password.classList.contains('error')) {
+            password.classList.remove('error');
+            passwordConfirm.classList.remove('error');
+            errorMsg.classList.remove('show-error');
+        }
     } else {
+        // Passwords don't match or at least one field is empty
         if (password.classList.contains('valid')) {
             password.classList.remove('valid');
             passwordConfirm.classList.remove('valid');
@@ -22,6 +38,7 @@ function check() {
         errorMsg.classList.add('show-error');
     }
 }
+
 
 password.addEventListener('keyup', check);
 passwordConfirm.addEventListener('keyup', check);
